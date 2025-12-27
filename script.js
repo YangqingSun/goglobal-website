@@ -10,11 +10,15 @@ let currentLanguage = 'cn'; // Default language is Chinese
  * Initialize the page
  */
 document.addEventListener('DOMContentLoaded', function() {
+    // Set initial language to Chinese
+    currentLanguage = 'cn';
+    updateLanguage(currentLanguage);
+    updateLanguageButtons(currentLanguage);
+    
+    // Initialize other features
     initializeHamburgerMenu();
     initializeLanguageToggle();
     initializeContactForm();
-    updateLanguage(currentLanguage);
-    updateLanguageButtons(currentLanguage); // Ensure button states are set correctly
 });
 
 /**
