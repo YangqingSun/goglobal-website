@@ -4,7 +4,7 @@
  */
 
 // Language Management
-let currentLanguage = 'en'; // Default language is English
+let currentLanguage = 'cn'; // Default language is Chinese
 
 /**
  * Initialize the page
@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeLanguageToggle();
     initializeContactForm();
     updateLanguage(currentLanguage);
+    updateLanguageButtons(currentLanguage); // Ensure button states are set correctly
 });
 
 /**
