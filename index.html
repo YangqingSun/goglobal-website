@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Optimization -->
+    <title>Go Global Patent | CES 2026 US Patent Services for Chinese Tech</title>
+    <meta name="description" content="Go Global Patent provides professional US patent services for Chinese enterprises. We help CES exhibitors convert products into enforceable US invention patents.">
+    <link rel="canonical" href="https://goglobalpatent.com" />
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:site_name" content="Go Global Patent" />
+    <meta property="og:title" content="Go Global Patent | CES 2026 US Patent Services for Chinese Tech" />
+    <meta property="og:description" content="Go Global Patent provides professional US patent services for Chinese enterprises. We help CES exhibitors convert products into enforceable US invention patents.">
+    <meta property="og:url" content="https://goglobalpatent.com" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Configuration for Brand Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-blue': '#1e40af',      // 深蓝色 - 专业、法律、信任
+                        'brand-light-blue': '#3b82f6', // 科技蓝
+                        'brand-dark': '#0f172a',      // 深色背景
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Mobile-First: Base font size 16px for better readability */
+        body {
+            font-size: 16px;
+        }
+        
+        /* Logo Placeholder Styling */
+        .logo-placeholder {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        /* Hero Background Overlay */
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(30, 64, 175, 0.75) 100%);
+        }
+        
+        /* Card Hover Effect */
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        /* Language Toggle Button */
+        .lang-btn {
+            transition: all 0.3s ease;
+            min-height: 44px; /* Mobile touch target */
+        }
+        
+        .lang-btn:hover {
+            background-color: #1e40af;
+            color: white;
+        }
+        
+        .lang-btn.active {
+            background-color: #1e40af;
+            color: white;
+        }
+        
+        /* Hamburger Menu Styles */
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 24px;
+            height: 24px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        
+        .hamburger span {
+            width: 24px;
+            height: 3px;
+            background-color: #1e40af;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+        
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+        }
+        
+        .mobile-menu.active {
+            display: block;
+        }
+        
+        .mobile-menu a {
+            display: block;
+            padding: 12px 16px;
+            color: #1e40af;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid #e5e7eb;
+            min-height: 44px; /* Mobile touch target */
+            display: flex;
+            align-items: center;
+        }
+        
+        .mobile-menu a:hover {
+            background-color: #f3f4f6;
+        }
+        
+        /* Desktop Navigation */
+        .desktop-nav {
+            display: none;
+        }
+        
+        @media (min-width: 768px) {
+            .desktop-nav {
+                display: flex;
+            }
+            
+            .hamburger {
+                display: none;
+            }
+        }
+        
+        /* CTA Button - Minimum 44px height for mobile */
+        .cta-button {
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 relative">
+                <!-- Logo and Brand Name -->
+                <div class="flex items-center space-x-3">
+                    <div class="logo-placeholder">GP</div>
+                    <span class="text-lg sm:text-xl font-bold text-brand-blue">Go Global Patent</span>
+                </div>
+                
+                <!-- Desktop Navigation Links -->
+                <div class="desktop-nav items-center space-x-6">
+                    <a href="#hero" class="text-gray-700 hover:text-brand-blue font-medium transition" data-en="Home" data-cn="首页">Home</a>
+                    <a href="#audience" class="text-gray-700 hover:text-brand-blue font-medium transition" data-en="Services" data-cn="服务">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-brand-blue font-medium transition" data-en="About" data-cn="关于">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-brand-blue font-medium transition" data-en="Contact" data-cn="联系">Contact</a>
+                    
+                    <!-- Desktop Language Toggle -->
+                    <div class="flex items-center space-x-2 ml-4">
+                        <button id="lang-en-desktop" class="lang-btn active px-4 py-2 rounded-md text-sm font-medium text-gray-700 bg-gray-100">
+                            En
+                        </button>
+                        <button id="lang-cn-desktop" class="lang-btn px-4 py-2 rounded-md text-sm font-medium text-gray-700 bg-gray-100">
+                            中
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Mobile: Hamburger Menu Button -->
+                <button id="hamburger" class="hamburger md:hidden" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="mobile-menu md:hidden">
+                    <a href="#hero" class="nav-link" data-en="Home" data-cn="首页">Home</a>
+                    <a href="#audience" class="nav-link" data-en="Services" data-cn="服务">Services</a>
+                    <a href="#about" class="nav-link" data-en="About" data-cn="关于">About</a>
+                    <a href="#contact" class="nav-link" data-en="Contact" data-cn="联系">Contact</a>
+                    
+                    <!-- Mobile Language Toggle -->
+                    <div class="flex items-center space-x-2 mt-4 px-4">
+                        <button id="lang-en-mobile" class="lang-btn active flex-1 px-4 py-2 rounded-md text-sm font-medium text-gray-700 bg-gray-100">
+                            En
+                        </button>
+                        <button id="lang-cn-mobile" class="lang-btn flex-1 px-4 py-2 rounded-md text-sm font-medium text-gray-700 bg-gray-100">
+                            中
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80');">
+        <div class="hero-overlay absolute inset-0"></div>
+        <div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" data-en="From CES Showcase to US Patents That Actually Protect" data-cn="从 CES 展会到真正受保护的美国专利">
+                From CES Showcase to US Patents That Actually Protect
+            </h1>
+            <p class="text-base sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed" data-en="At Go Global Patent, we help CES tech companies convert real products into enforceable US invention patents." data-cn="在 Go Global Patent，我们帮助 CES 科技公司将真实产品转化为可执行的美国发明专利。">
+                At Go Global Patent, we help CES tech companies convert real products into enforceable US invention patents.
+            </p>
+            <a href="#contact" class="cta-button inline-block bg-brand-light-blue hover:bg-brand-blue text-white font-bold py-4 px-6 sm:px-8 rounded-lg text-base sm:text-lg transition duration-300 transform hover:scale-105" data-en="Free CES Patent Review" data-cn="免费 CES 专利评估">
+                Free CES Patent Review
+            </a>
+        </div>
+    </section>
+    
+    <!-- Trust Bar -->
+    <section class="bg-brand-blue text-white py-6">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-base sm:text-lg md:text-xl font-medium" data-en="Serving Chinese Tech Innovators for 20 Years | Complete Patent Services for Major Enterprises" data-cn="服务中国科技创新者 20 年 | 为大型企业提供完整专利服务">
+                Serving Chinese Tech Innovators for 20 Years | Complete Patent Services for Major Enterprises
+            </p>
+        </div>
+    </section>
+    
+    <!-- Target Audience Section -->
+    <section id="audience" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 text-brand-blue" data-en="Who We Serve" data-cn="我们的服务对象">
+                Who We Serve
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Tier 1: Cross-border Brands -->
+                <div class="bg-white rounded-lg shadow-lg p-6 sm:p-8 service-card">
+                    <div class="text-5xl mb-4 text-center">📜</div>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-4 text-brand-blue text-center" data-en="Tier 1: Cross-border Brands" data-cn="第一类：跨境品牌">
+                        Tier 1: Cross-border Brands
+                    </h3>
+                    <p class="text-base text-gray-600 text-center" data-en="If you only have design patents, your product is vulnerable in the US." data-cn="如果您只有外观设计专利，您的产品在美国市场将面临风险。">
+                        If you only have design patents, your product is vulnerable in the US.
+                    </p>
+                </div>
+                
+                <!-- Tier 2: Smart Hardware/IoT -->
+                <div class="bg-white rounded-lg shadow-lg p-6 sm:p-8 service-card">
+                    <div class="text-5xl mb-4 text-center">🏠</div>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-4 text-brand-blue text-center" data-en="Tier 2: Smart Hardware/IoT" data-cn="第二类：智能硬件/物联网">
+                        Tier 2: Smart Hardware/IoT
+                    </h3>
+                    <p class="text-base text-gray-600 text-center" data-en="We convert your 'existing tech' into US-standard invention claims." data-cn="我们将您的"现有技术"转化为符合美国标准的发明专利权利要求。">
+                        We convert your 'existing tech' into US-standard invention claims.
+                    </p>
+                </div>
+                
+                <!-- Tier 3: AI + Hardware -->
+                <div class="bg-white rounded-lg shadow-lg p-6 sm:p-8 service-card">
+                    <div class="text-5xl mb-4 text-center">🤖</div>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-4 text-brand-blue text-center" data-en="Tier 3: AI + Hardware" data-cn="第三类：AI + 硬件">
+                        Tier 3: AI + Hardware
+                    </h3>
+                    <p class="text-base text-gray-600 text-center" data-en="We solve the issue of AI algorithms being rejected for being too abstract." data-cn="我们解决 AI 算法因过于抽象而被驳回的问题。">
+                        We solve the issue of AI algorithms being rejected for being too abstract.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 text-brand-blue" data-en="Our Services" data-cn="我们的服务">
+                Our Services
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Invention Patents -->
+                <div class="bg-gradient-to-br from-brand-blue to-brand-light-blue text-white rounded-lg shadow-lg p-6 sm:p-8 text-center service-card">
+                    <div class="text-5xl mb-4">📋</div>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-4" data-en="Invention Patents" data-cn="发明专利">
+                        Invention Patents
+                    </h3>
+                    <p class="text-base text-blue-100" data-en="Comprehensive protection for your innovative technologies and processes." data-cn="为您的创新技术和工艺提供全面保护。">
+                        Comprehensive protection for your innovative technologies and processes.
+                    </p>
+                </div>
+                
+                <!-- Utility Models -->
+                <div class="bg-gradient-to-br from-brand-blue to-brand-light-blue text-white rounded-lg shadow-lg p-6 sm:p-8 text-center service-card">
+                    <div class="text-5xl mb-4">⚙️</div>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-4" data-en="Utility Models" data-cn="实用新型">
+                        Utility Models
+                    </h3>
+                    <p class="text-base text-blue-100" data-en="Practical protection for functional improvements and technical solutions." data-cn="为功能改进和技术方案提供实用保护。">
+                        Practical protection for functional improvements and technical solutions.
+                    </p>
+                </div>
+                
+                <!-- Design Patents -->
+                <div class="bg-gradient-to-br from-brand-blue to-brand-light-blue text-white rounded-lg shadow-lg p-6 sm:p-8 text-center service-card">
+                    <div class="text-5xl mb-4">🎨</div>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-4" data-en="Design Patents" data-cn="外观设计">
+                        Design Patents
+                    </h3>
+                    <p class="text-base text-blue-100" data-en="Protection for the ornamental design of your products." data-cn="为您的产品装饰性设计提供保护。">
+                        Protection for the ornamental design of your products.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Us Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 text-brand-blue" data-en="Our Mission" data-cn="我们的使命">
+                Our Mission
+            </h2>
+            <div class="max-w-4xl mx-auto">
+                <p class="text-base sm:text-lg md:text-xl text-gray-700 text-center leading-relaxed" data-en="Safeguarding the survival and growth of Chinese enterprises in the US market." data-cn="保障中国企业在美国市场的生存与发展。">
+                    Safeguarding the survival and growth of Chinese enterprises in the US market.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 text-brand-blue" data-en="Get Your Free Patent Review" data-cn="获取免费专利评估">
+                Get Your Free Patent Review
+            </h2>
+            <div class="max-w-2xl mx-auto">
+                <form class="bg-gray-50 rounded-lg shadow-lg p-8" id="contact-form" action="https://formspree.io/f/xjgbqdqr" method="POST">
+                    <div class="mb-6">
+                        <label for="name" class="block text-base text-gray-700 font-medium mb-2" data-en="Name" data-cn="姓名">
+                            Name
+                        </label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue min-h-[44px]">
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-gray-700 font-medium mb-2 text-base" data-en="Email" data-cn="邮箱">
+                            Email
+                        </label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue min-h-[44px]">
+                    </div>
+                    <div class="mb-6">
+                        <label for="phone" class="block text-gray-700 font-medium mb-2 text-base" data-en="Phone (Optional)" data-cn="电话（选填）">
+                            Phone (Optional)
+                        </label>
+                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue min-h-[44px]">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 font-medium mb-2 text-base" data-en="Message" data-cn="留言">
+                            Message
+                        </label>
+                        <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue"></textarea>
+                    </div>
+                    <button type="submit" id="submit-btn" class="cta-button w-full bg-brand-blue hover:bg-brand-light-blue text-white font-bold py-4 px-8 rounded-lg text-base sm:text-lg transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed" data-en="Submit" data-cn="提交">
+                        Submit
+                    </button>
+                </form>
+                <!-- Success Message Container -->
+                <div id="success-message" class="hidden max-w-2xl mx-auto mt-6 bg-green-100 border border-green-400 text-green-700 px-6 py-4 rounded-lg">
+                    <p class="text-base font-medium" data-en="Thank you! Your patent review request has been sent. We will contact you shortly." data-cn="感谢您！您的专利评估请求已发送。我们将尽快与您联系。">
+                        Thank you! Your patent review request has been sent. We will contact you shortly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-4">Go Global Patent</h3>
+                    <p class="text-base text-gray-400" data-en="Professional US patent services for Chinese enterprises." data-cn="为中国企业提供专业的美国专利服务。">
+                        Professional US patent services for Chinese enterprises.
+                    </p>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-4" data-en="Contact" data-cn="联系方式">
+                        Contact
+                    </h3>
+                    <p class="text-base text-gray-400 mb-2">Email: <a href="mailto:info@goglobalpatent.com" class="hover:text-brand-light-blue transition">info@goglobalpatent.com</a></p>
+                </div>
+                
+                <!-- Social Media -->
+                <div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-4" data-en="Connect With Us" data-cn="联系我们">
+                        Connect With Us
+                    </h3>
+                    <div class="flex flex-wrap gap-4">
+                        <!-- LinkedIn (Priority) -->
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center hover:bg-blue-700 transition cursor-pointer min-h-[44px]">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24" aria-label="LinkedIn">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <!-- WeChat QR Code Placeholder -->
+                        <div class="w-16 h-16 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-gray-600 transition cursor-pointer min-h-[44px]">
+                            <span class="text-xs font-medium text-center px-1">WeChat</span>
+                        </div>
+                        <!-- WhatsApp QR Code Placeholder -->
+                        <div class="w-16 h-16 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-gray-600 transition cursor-pointer min-h-[44px]">
+                            <span class="text-xs font-medium text-center px-1">WhatsApp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p class="text-base">&copy; 2025 Go Global Patent. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>
+
